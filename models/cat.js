@@ -9,6 +9,9 @@ function postCat(cat, callback) {
     collection.insertOne(cat, callback);
 }
 
+function deleteCat(cat, callback) {
+    collection.deleteOne(cat, callback);
+}
 
 
 function getAllCats(callback) {
@@ -16,4 +19,4 @@ function getAllCats(callback) {
 }
 
 
-module.exports = {postCat,getAllCats}
+module.exports = {postCat,getAllCats,deleteCat}
